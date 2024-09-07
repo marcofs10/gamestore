@@ -20,6 +20,12 @@
     height: auto;
     -webkit-user-drag: none;
 }
+.gameHover{
+    z-index: 6;
+    transform: scale(1.02);
+    height: auto;
+    position: absolute;
+}
 
 .wrapper{
     padding-bottom: 67%;
@@ -60,6 +66,40 @@
 
 .info .details>p{
     font-weight: 400;
+}
+
+.info>div>ul>li{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 0px;
+}
+
+.info>div>ul>li:first-of-type{
+    padding-top: 3%;
+}
+
+.info>div>ul>li:not(:last-of-type){
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.info>div>ul>li>span{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info>div>ul>li>span:first-child{
+    color: rgba(255,255,255,0.6);
+}
+
+.wishIcon{
+    filter: invert(62%) sepia(0%) saturate(7287%) hue-rotate(72deg) brightness(81%) contrast(78%);
+    height: 20px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.wishIcon:hover{
+    filter: invert(95%) sepia(93%) saturate(23%) hue-rotate(157deg) brightness(106%) contrast(70%);
 }
 
 
