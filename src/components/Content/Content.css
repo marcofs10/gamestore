@@ -1,0 +1,49 @@
+.content {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 40px 280px 40px;
+    min-height: 1000px;
+}
+
+.main {
+    width: 100%;
+}
+
+.main>p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main>h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1160px){
+    .main>h1 {
+        font-size: 3.5em;
+    }
+    .main>p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:858px){
+    .content {
+        padding: 0px 10px 280px 10px;
+        justify-content: center;
+        width: 100%;
+    }
+    .main {
+        max-width: 480px;
+    }
+    .main>h1 {
+        font-size: 36px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .main>p {
+        text-align: center;
+    }
+}
