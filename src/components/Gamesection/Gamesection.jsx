@@ -16,19 +16,19 @@ export const Gamesection = ({ games, isMobile }) => {
         <>
             <div className="options">
                 <section className="filterContainer">
-                    <button className="filterButton" aria-label="Current Filter">
+                    <button aria-label="Current Filter">
                         Filter by:{' '}<span>none</span>
                     </button>
-                    <button className="filterButton clearButton" aria-label="Clear Filters">
+                    <button aria-label="Clear Filters">
                         Clear Filter
                     </button>
                 </section>
                 {!isMobile && <section className="displayContainer">
                     <p>Display options:</p>
-                    <button className={`${active ? "active" : ""} displayButton`} aria-label='Display grids' onClick={handleLayoutSwitch}>
-                        <img src={grid} className="displayItem" />
+                    <button className={active ? "active" : ""} aria-label='Display grids' onClick={handleLayoutSwitch}>
+                        <img src={grid} />
                     </button>
-                    <button className={`${!active ? "active" : ""} displayButton`} aria-label='Display rows' onClick={handleLayoutSwitch}>
+                    <button className={!active ? "active" : ""} aria-label='Display rows' onClick={handleLayoutSwitch}>
                         <img src={list} />
                     </button>
                 </section>}

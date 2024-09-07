@@ -12,7 +12,7 @@ export const Navbar = ({isMobile}) => {
                 <h3>Game Store</h3>
             </Link>}
             <SearchBar />
-            {!isMobile && <a className="githubContainer" target="_blank" href="https://github.com/marcofs10">
+            {!isMobile && <a className="githubContainer" target="_blank" href="https://github.com/marcofs10/gamestore">
                 <img src={github} />
                 <h3>marcofs10</h3>
             </a>}

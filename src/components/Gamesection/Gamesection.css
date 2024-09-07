@@ -11,7 +11,7 @@
     gap: 8px;
 }
 
-.filterButton {
+.filterContainer>button {
     padding: 10px 16px;
     height: 40px;
     background-color: #262626;
@@ -35,7 +35,7 @@
     color: #737373;
 }
 
-.displayButton {
+.displayContainer>button {
     border: 1px transparent;
     border-radius: 8px;
     outline: none;
@@ -48,15 +48,15 @@
     align-items: center;
 }
 
-.displayButton:hover {
+.displayContainer>button:hover {
     opacity: 0.6;
 }
 
-.displayButton>img{
+.displayContainer>button>img{
     -webkit-user-drag: none;
 }
 
-.active {
+.displayContainer>.active {
     cursor: default;
     opacity: 1;
     pointer-events: none;
