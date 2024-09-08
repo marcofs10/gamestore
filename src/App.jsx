@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from './pages/HomePage/HomePage.jsx';
 import { GamePage } from './pages/GamePage/GamePage.jsx';
+import { SearchPage } from './pages/SearchPage/SearchPage.jsx';
 import { statusWantedModel } from './utils/statusWantedModel.js'
 import './App.css'
 
@@ -43,6 +44,10 @@ function App() {
                     vertical={vertical}
                     updateCartSection={updateCartSection}
                     statusGamesWanted={statusGamesWanted} />} />
+                <Route path="/gamestore/search" element={<SearchPage
+                    isMobile={isMobile} 
+                    updateCartSection={updateCartSection}
+                    statusGamesWanted={statusGamesWanted}/>} />
             </Routes>
         </>
     )
