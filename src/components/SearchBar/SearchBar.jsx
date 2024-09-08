@@ -6,13 +6,17 @@ export const SearchBar = () => {
 
     const [text, setText] = useState('');
 
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     const handleChangeText = (e) => {
         setText(e.target.value)
     }
 
     return (
         <div className="searchContainer">
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input placeholder="Search games"
                     spellCheck="false"
                     value={text}

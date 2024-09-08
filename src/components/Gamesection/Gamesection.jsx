@@ -4,7 +4,7 @@ import grid from '/images/grid.webp'
 import list from '/images/list.webp'
 import './Gamesection.css'
 
-export const Gamesection = ({ games, isMobile }) => {
+export const Gamesection = ({ games, filter, isMobile, clearFilter }) => {
 
     const [active, setActive] = useState(true);
 
@@ -17,9 +17,9 @@ export const Gamesection = ({ games, isMobile }) => {
             <div className="options">
                 <section className="filterContainer">
                     <button aria-label="Current Filter">
-                        Filter by:{' '}<span>none</span>
+                        Filter by:{' '}<span>{filter}</span>
                     </button>
-                    <button aria-label="Clear Filters">
+                    <button aria-label="Clear Filters" onClick={clearFilter}>
                         Clear Filter
                     </button>
                 </section>
