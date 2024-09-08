@@ -1,0 +1,54 @@
+.notFound {
+    background-color: #420612;
+    height: 100vh;
+    position: relative;
+}
+
+.notFoundContainer{
+    position: absolute;
+    left: 24%;
+    top: 26%;
+}
+
+.notFoundContainer>h1{
+    font-size: 168px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.notFoundContainer>span{
+    display: block;
+    font-weight: 400;
+    margin: 50px 0 100px;
+}
+
+.notFoundContainer>button{
+    background-color: white;
+    font-weight: 400;
+    width: 304px;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:858px){
+    .notFoundContainer{
+        position: absolute;
+        left: 10%;
+        top: 26%;
+    }
+
+    .notFoundContainer>h1{
+        font-size: 100px;
+    }
+
+    .notFoundContainer>span{
+        margin: 50px 0 50px;
+    }
+
+    .notFoundContainer>button{
+        width: 250px;
+    }
+}
