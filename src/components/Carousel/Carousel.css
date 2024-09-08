@@ -1,5 +1,18 @@
-.footageImg{
+.carousel{
+    position: relative;
     width: 70%;
+    height: 100%;
+}
+
+.imgSlider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.footageImg{
+    width: 100%;
     height: 100%;
     display: block;
     border-radius: 15px;
@@ -8,5 +21,55 @@
     flex-grow: 0;
     transition: translate 300ms ease;
     -webkit-user-drag: none;
-    background-size: cover;
+}
+
+.arrow{
+    width: 3vw;
+    position: absolute;
+    top: 44%;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+.left{
+    left: 10px;
+}
+
+.right{
+    right: 10px;
+}
+
+.left:active{
+    transform: scale(0.950);
+}
+
+.right:active{
+    transform: scale(0.950);
+}
+
+.buttonContainer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    gap: 8px;
+}
+
+.sliderButton{
+    background-color: rgba(255,255,255,0.5);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sliderButtonActive{
+    background-color: white;
+}
+
+@media screen and (max-width:1000px){
+    .carousel{
+        width: 100%;
+    }
 }
