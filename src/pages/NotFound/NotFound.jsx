@@ -5,8 +5,19 @@ import './NotFound.css'
 
 export const NotFound = () => {
 
+    const navigate = useNavigate();
+
+    const randFootage = Math.floor(Math.random() * games[0].footage.length);
+    const randGame = Math.floor(Math.random() * games.length);
+
+    const randomImage = games[randGame].footage[randFootage];
+
     return (
         <div className='notFound'>
+            <div className='randomImage'
+                style={{
+                    backgroundImage: `linear-gradient(270deg,transparent,crimson),url(${randomImage})`,
+                }}></div>
             <div className='notFoundContainer'>
                 <h1>404</h1>
                 <span className='text'>
@@ -14,7 +25,7 @@ export const NotFound = () => {
                     <br />
                     We couldn't find that page.
                 </span>
-                <button>Main Page</button>
+                <button onClick={() => navigate('/game-ecommerce/')}>Main Page</button>
             </div>
         </div>
     )

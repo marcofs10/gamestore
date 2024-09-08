@@ -4,6 +4,14 @@
     position: relative;
 }
 
+.notFound>.randomImage {
+    filter: brightness(30%);
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 300px;
+    background-repeat: no-repeat;
+}
+
 .notFoundContainer{
     position: absolute;
     left: 24%;
@@ -33,7 +41,18 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:1160px){
+    .notFound>.randomImage {
+        background-position-x: 0px;
+    }
+}
+
 @media screen and (max-width:858px){
+    .notFound>.randomImage {
+        background-position-x: -450px;
+        filter: brightness(15%);
+    }
+
     .notFoundContainer{
         position: absolute;
         left: 10%;
@@ -50,5 +69,12 @@
 
     .notFoundContainer>button{
         width: 250px;
+    }
+}
+
+@media screen and (max-width:410px){
+    .notFound>.randomImage {
+        background-image: none !important;
+        background-color: crimson;
     }
 }
