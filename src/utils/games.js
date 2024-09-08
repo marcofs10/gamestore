@@ -1,7 +1,7 @@
 export const games = [
     {
         name: "Deep Rock Galactic",
-        surname: "cyberpunk",
+        codename: "deep-rock-galactic",
         price: 29.99,
         about: 'Deep Rock Galactic is a 1-4 player co-op FPS featuring badass space Dwarves, 100% destructible environments, procedurally-generated caves, and endless hordes of alien monsters. Work together as a team to dig, explore, and fight your way through a massive cave system filled with hordes of deadly enemies and valuable resources. You will need to rely on your teammates if you want to survive the most hostile cave systems in the galaxy!',
         link: 'https://www.thinkwithportals.com/',
@@ -30,7 +30,7 @@ export const games = [
     },
     {
         name: "Portal 2",
-        surname: "cyberpunk",
+        codename: "portal-2",
         price: 9.99,
         about: 'The "Perpetual Testing Initiative" has been expanded to allow you to design co-op puzzles for you and your friends! Players will explore never-before-seen areas of the Aperture Science Labs and be reunited with GLaDOS, the occasionally murderous computer companion who guided them through the original game. The game’s two-player cooperative mode features its own entirely separate campaign with a unique story, test chambers, and two new player characters.',
         link: 'https://www.thinkwithportals.com/',
@@ -59,7 +59,7 @@ export const games = [
     },
     {
         name: "Hollow Knight: Silksong",
-        surname: "cyberpunk",
+        codename: "hollow-knight-silksong",
         price: 9.99,
         about: 'Play as Hornet, princess-protector of Hallownest, and adventure through a whole new kingdom ruled by silk and song! Captured and brought to this unfamiliar world, Hornet must battle foes and solve mysteries as she ascends on a deadly pilgrimage to the kingdom’s peak. Silksong is the epic sequel to Hollow Knight, the award winning action-adventure. As the lethal hunter Hornet, journey to all-new lands, discover new powers, battle vast hordes of bugs and beasts and uncover ancient secrets tied to your nature and your past.',        link: 'https://hollowknightsilksong.com/',
         release: '31 Dic, 2999',
@@ -87,7 +87,7 @@ export const games = [
     },
     {
         name: "Metroid Dread",
-        surname: "cyberpunk",
+        codename: "metroid-dread",
         price: 24.99,
         about: 'Metroid Dread is an action-adventure game in which players control bounty hunter Samus Aran as she explores the planet ZDR. As the player explores, they discover new items and weapons, allowing them to access new areas. The Galactic Federation receives evidence that the X, a dangerous species of parasite that can mimic any creature it infects, survives on the remote planet ZDR. They dispatch seven EMMI (Extraplanetary Multiform Mobile Identifiers) robots to ZDR to investigate, but lose contact. The Federation sends Samus Aran to ZDR to investigate.',
         link: 'https://metroid.nintendo.com/dread/',
@@ -116,7 +116,7 @@ export const games = [
     },
     {
         name: "Black Mesa",
-        surname: "cyberpunk",
+        codename: "black-mesa",
         price: 19.99,
         about: 'Black Mesa is the original Half-Life as if it was made in the 21st century using modern graphics and updated mechanics. This remake of the classic game was envisioned by a group of enthusiasts, approved by Valve, and spent eight years in the making. You are Gordon Freeman, a theoretical physicist at the Black Mesa Research Facility. When a routine experiment goes horribly wrong, you must fight your way through an interdimensional alien invasion, and a bloodthirsty military clean-up crew in order to save the science team... and the world!',
         link: 'https://www.cyberpunk.net/',
@@ -145,7 +145,7 @@ export const games = [
     },
     {
         name: "The Witcher 3: Wild Hunt",
-        surname: "cyberpunk",
+        codename: "the-witcher-3-wild-hunt",
         price: 39.99,
         about: 'The third game in a series, it holds nothing back from the player. Open world adventures of the renowned monster slayer Geralt of Rivia are now even on a larger scale. Following the source material more accurately, this time Geralt is trying to find the child of the prophecy, Ciri while making a quick coin from various contracts on the side. Great attention to the world building above all creates an immersive story, where your decisions will shape the world around you.',
         link: 'https://www.thewitcher.com/',
@@ -174,7 +174,7 @@ export const games = [
     },
     {
         name: "Spider-Man PS4",
-        surname: "cyberpunk",
+        codename: "spider-man-ps4",
         price: 59.99,
         about: "Developed by Insomniac Games in collaboration with Marvel, and optimized for PC by Nixxes Software, Marvel's Spider-Man Remastered on PC introduces an experienced Peter Parker who’s fighting big crime and iconic villains in Marvel’s New York. At the same time, he’s struggling to balance his chaotic personal life and career while the fate of New York rests upon his shoulders.",
         link: 'https://insomniac.games/game/spider-man-ps4/',

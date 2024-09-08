@@ -1,0 +1,12 @@
+.footageImg{
+    width: 70%;
+    height: 100%;
+    display: block;
+    border-radius: 15px;
+    aspect-ratio: 16/9;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease;
+    -webkit-user-drag: none;
+    background-size: cover;
+}

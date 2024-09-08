@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { IconPlatform } from '../IconPlatform/IconPlatform.jsx'
 import './Game.css'
 
@@ -6,6 +7,7 @@ export const Game = ({ game, row, updateCartSection, wanted }) => {
 
     const [hovered, setHovered] = useState(false);
     const [thumbnailShown, setThumbnailShown] = useState(0);
+    const navigate = useNavigate();
 
     const handleMouseEnter = () => {
         setHovered(true)
@@ -33,10 +35,15 @@ export const Game = ({ game, row, updateCartSection, wanted }) => {
         }
     }
 
+    const goToGamePage = () => {
+        navigate(`/gamestore/games/${game.codename}`);
+    }
+
     return (
         <div className={`gameWrapper ${row ? 'gameWrapperRow' : 'gameWrapperGrid'}`}
             onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onMouseLeave={handleMouseLeave}
+            onClick={goToGamePage}>
             <div className={`game ${hovered ? 'gameHover' : ''}`}>
                 <div className='wrapper'
                     onMouseMove={handleThumbnailShown}>

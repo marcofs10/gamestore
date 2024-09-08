@@ -1,0 +1,166 @@
+.gamePageContentVertical{
+    padding: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.gamePageContentVertical>h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.contentContainerVertical{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    height: 100%;
+}
+
+.besidesCarousel{
+    display: flex;
+    gap: 10px;
+}
+
+.gameInfoContainerVertical{
+    background-color:#202020;
+    border-radius: 15px;
+    width: 100%;
+    height: inherit;
+    padding: 25px 30px 50px 30px;
+    position: relative;
+}
+
+.gameInfoContainerVertical>a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.arrowLinkGameVertical{
+    width: 10px;
+    height: 10px;
+    padding-left: 5px;
+}
+
+.gameInfoContainerVertical>h2{
+    font-size: 16px;
+}
+
+.gameInfoContainerVertical>p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.gameDetailsVertical{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.gameDetailsElementVertical{
+    min-width: 50%;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.gameDetailsElementVertical>span{
+    display: inline-block;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 2px;
+}
+
+.gameDetailsElementVertical{
+    font-weight: 400;
+}
+
+.footerPriceVertical{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+    position: absolute;
+    right: 20px;
+    bottom: 8px;
+}
+
+.footerPriceVertical>span{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footerPriceVertical>button{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    background-color: #3B3B3B;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    font-size: 12px;
+}
+
+.footerPriceVertical>button:hover{
+    background-color: #388000;
+}
+
+.footerPriceVertical>button>img{
+    width: 18px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(14deg) brightness(106%) contrast(102%);
+    -webkit-user-drag: none;
+}
+
+@media screen and (max-width:740px){
+    .contentContainerVertical{
+        gap: 15px;
+    }
+    .besidesCarousel{
+        flex-direction: column;
+    }
+    .gameInfoContainerVertical{
+        width: auto;
+        padding: 15px 30px 50px 30px;
+    }
+    .gameInfoContainerVertical:first-child{
+        padding: 15px 30px 25px 30px;
+    }
+}
+
+@media screen and (max-width:630px){
+    .gamePageContentVertical{
+        padding: 0px 10px;
+    }
+    .gameInfoContainerVertical:first-child{
+        padding: 15px 30px 20px 30px;
+    }
+    .gamePageContentVertical>h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .contentContainerVertical{
+        padding-bottom: 10px;
+        gap: 5px;
+    }
+    .besidesCarousel{
+        gap: 5px;
+    }
+    .gameInfoContainerVertical{
+        width: auto;
+        padding: 15px 15px 50px 15px;
+    }
+    .gameInfoContainerVertical:first-child{
+        padding: 15px 15px 20px 15px;
+    }
+}
