@@ -114,6 +114,10 @@
     background-color: #388000;
 }
 
+.footerPriceVertical>.buttonWantedVertical{
+    background-color: #38b000;
+}
+
 .footerPriceVertical>button>img{
     width: 18px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(14deg) brightness(106%) contrast(102%);

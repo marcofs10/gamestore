@@ -27,8 +27,12 @@ export const GamePage = ({ isMobile, vertical, updateCartSection, statusGamesWan
                 setCartDisplayed={setCartDisplayed}
                 cartCount={(statusGamesWanted.filter(el => el.wanted === true)).length} />
             {vertical ?
-                <GamePageVertical game={gameSelected[0]}/> :
-                <GamePageContent game={gameSelected[0]}/>}
+                <GamePageVertical game={gameSelected[0]}
+                    wanted={statusGamesWanted.find(el => el.id === gameSelected[0].id).wanted}
+                    updateCartSection={updateCartSection} /> :
+                <GamePageContent game={gameSelected[0]}
+                    wanted={statusGamesWanted.find(el => el.id === gameSelected[0].id).wanted}
+                    updateCartSection={updateCartSection} />}
         </section>
     )
 }

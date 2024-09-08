@@ -4,7 +4,12 @@ import { Carousel } from '../Carousel/Carousel'
 import { IconPlatform } from '../IconPlatform/IconPlatform'
 import './GamePageContent.css'
 
-export const GamePageContent = ({ game }) => {
+export const GamePageContent = ({ game, wanted, updateCartSection }) => {
+
+    const toggleCartElement = (e) => {
+        e.stopPropagation();
+        updateCartSection(game, !wanted);
+    }
 
     return (
         <div className='gamePageContent'>
@@ -53,9 +58,9 @@ export const GamePageContent = ({ game }) => {
                     </div>
                     <div className='footerPrice'>
                         <span>{`$${game.price}`}</span>
-                        <button>
+                        <button className={wanted ? 'buttonWanted' : ''} onClick={toggleCartElement}>
                             <img src='/images/Gift.png' />
-                            <p>Add to cart</p>
+                            <p>{wanted ? 'Added to cart' : 'Add to cart'}</p>
                         </button>
                     </div>
                 </div>

@@ -148,6 +148,10 @@
     background-color: #388000;
 }
 
+.footerPrice>.buttonWanted{
+    background-color: #38b000;
+}
+
 .footerPrice>button>img{
     -webkit-user-drag: none;
 }
