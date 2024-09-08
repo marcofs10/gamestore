@@ -51,11 +51,32 @@
     padding-top: 3px;
 }
 
+.animation{
+    color: 	#adff2f;
+    animation: .5s linear 0s 1 addGameToCart;  
+}
+
 
 .cart{
     filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(123deg) brightness(106%) contrast(107%);
 }
 
+.animationCart{
+    filter: invert(81%) sepia(56%) saturate(586%) hue-rotate(29deg) brightness(105%) contrast(101%);
+    animation: .5s linear 0s 1 addGameToCart;
+}
+
+@keyframes addGameToCart {
+    0% {
+        transform: scale(100%) rotate(0deg);
+    }
+    5% {
+        transform: scale(130%) rotate(-10deg);
+    }
+    60% {
+        transform: scale(100%) rotate(0deg);
+    }
+}
 
 @media screen and (max-width:1160px){
     .navbar {
