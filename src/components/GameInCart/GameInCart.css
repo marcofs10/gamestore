@@ -1,0 +1,38 @@
+.gameInCart{
+    background-color: #3B3B3B;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding-right: 18px;
+    overflow: hidden;
+    height: 55px;
+}
+
+.gameInCart>img{
+    width: 100px;
+}
+
+.gameInCart>.details{
+    flex: 1;
+    padding-left: 8px;
+}
+
+.gameInCart>.details>p{
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.gameInCart>button{
+    width: 23px;
+    height: 23px;
+    color: white;
+    border-radius: 99px;
+    border: none;
+    background-color: #3B3B3B;
+    cursor: pointer;
+}
+
+.gameInCart>button:hover{
+    background-color: #9b9b9b;
+}

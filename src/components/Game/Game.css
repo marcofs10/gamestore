@@ -122,6 +122,10 @@
     filter: invert(95%) sepia(93%) saturate(23%) hue-rotate(157deg) brightness(106%) contrast(70%);
 }
 
+.wishIconWanted{
+    filter: invert(79%) sepia(86%) saturate(3393%) hue-rotate(0deg) brightness(104%) contrast(102%) !important;
+}
+
 
 @media screen and (max-width:1438px){
     .gameWrapperGrid{

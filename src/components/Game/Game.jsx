@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { IconPlatform } from '../IconPlatform/IconPlatform.jsx'
 import './Game.css'
 
-export const Game = ({ game, row }) => {
+export const Game = ({ game, row, updateCartSection, wanted }) => {
 
     const [hovered, setHovered] = useState(false);
     const [thumbnailShown, setThumbnailShown] = useState(0);
@@ -14,6 +14,11 @@ export const Game = ({ game, row }) => {
     const handleMouseLeave = () => {
         setHovered(false)
         setThumbnailShown(0)
+    }
+
+    const toggleCartElement = (e) => {
+        e.stopPropagation();
+        updateCartSection(game, !wanted);
     }
 
     const handleThumbnailShown = (e) => {
@@ -54,8 +59,9 @@ export const Game = ({ game, row }) => {
                     <h2>{game.name}</h2>
                     {(hovered) && (
                         <div>
-                            <img className='wishIcon'
-                                src='/images/Gift.png' />
+                            <img className={`wishIcon ${wanted ? 'wishIconWanted' : ''}`}
+                                src='/images/Gift.png' 
+                                onClick={toggleCartElement} />
                             <ul>
                                 <li>
                                     <span>Score:</span>

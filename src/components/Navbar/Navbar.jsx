@@ -4,7 +4,11 @@ import cart from '/images/cart.png'
 import { SearchBar } from '../SearchBar/SearchBar.jsx'
 import './Navbar.css'
 
-export const Navbar = ({isMobile}) => {
+export const Navbar = ({ isMobile, cartCount, setCartDisplayed }) => {
+
+    const handleOpenCart = () => {
+        setCartDisplayed(true)
+    }
 
     return (
         <nav className="navbar">
@@ -16,9 +20,9 @@ export const Navbar = ({isMobile}) => {
                 <img src={github} />
                 <h3>marcofs10</h3>
             </a>}
-            <div className='cartContainer'>
+            <div className='cartContainer' onClick={handleOpenCart}>
                 <img src={cart} className='cart'/>
-                <h3>{`Cart: 0`}</h3>
+                <h3>{`Cart: ${cartCount}`}</h3>
             </div>
         </nav>
     )

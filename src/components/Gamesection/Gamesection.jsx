@@ -4,7 +4,7 @@ import grid from '/images/grid.webp'
 import list from '/images/list.webp'
 import './Gamesection.css'
 
-export const Gamesection = ({ games, filter, isMobile, clearFilter }) => {
+export const Gamesection = ({ games, filter, isMobile, clearFilter, updateCartSection, statusGamesWanted }) => {
 
     const [active, setActive] = useState(true);
 
@@ -36,7 +36,9 @@ export const Gamesection = ({ games, filter, isMobile, clearFilter }) => {
             <div className={active ? 'gridContainer' : 'rowContainer'}>
                 {games.map(game => (<Game key={game.id}
                     game={game}
-                    row={!active} />))}
+                    row={!active}
+                    updateCartSection={updateCartSection}
+                    wanted={statusGamesWanted.find(el => el.id === game.id).wanted} />))}
             </div>
         </>
     )

@@ -5,7 +5,7 @@ import { games } from '../../utils/games.js'
 
 import './Content.css'
 
-export const Content = ({ isMobile }) => {
+export const Content = ({ isMobile, updateCartSection, statusGamesWanted }) => {
 
     const [gameList, setGameList] = useState(games)
     const [filter, setFilter] = useState("none")
@@ -38,7 +38,9 @@ export const Content = ({ isMobile }) => {
                     games={gameList}
                     filter={filter}
                     isMobile={isMobile}
-                    clearFilter={clearFilter} />
+                    clearFilter={clearFilter}
+                    updateCartSection={updateCartSection}
+                    statusGamesWanted={statusGamesWanted} />
             </div>
         </div>
     )
