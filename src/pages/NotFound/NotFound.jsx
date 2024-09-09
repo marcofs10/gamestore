@@ -25,7 +25,7 @@ export const NotFound = () => {
                     <br />
                     We couldn't find that page.
                 </span>
-                <button onClick={() => navigate('/game-ecommerce/')}>Main Page</button>
+                <button onClick={() => navigate('/gamestore/')}>Main Page</button>
             </div>
         </div>
     )

@@ -49,7 +49,7 @@
 
 @media screen and (max-width:858px){
     .notFound>.randomImage {
-        background-position-x: -450px;
+        background-position-x: -200px;
         filter: brightness(15%);
     }
 
