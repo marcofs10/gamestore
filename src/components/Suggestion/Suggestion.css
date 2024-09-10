@@ -1,0 +1,15 @@
+.suggestion{
+    text-decoration: none;
+    background-color: #202020;
+    color: white;
+    width: inherit;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    font-weight: 400;
+}
+
+.selected{
+    background-color: #606060;
+}

@@ -68,6 +68,15 @@
     font-weight: 500;
 }
 
+.suggestions {
+    position: absolute;
+    top: 104%;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
 .searchContainer button:active {
     transform: scale(0.950);
 }
