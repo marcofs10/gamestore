@@ -20,7 +20,7 @@
     font-weight: 700;
 }
 
-@media screen and (max-width:1160px){
+@media screen and (max-width:1367px){
     .main>h1 {
         font-size: 3.5em;
     }

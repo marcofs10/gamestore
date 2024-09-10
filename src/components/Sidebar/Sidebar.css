@@ -54,7 +54,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:1160px){
+@media screen and (max-width:1367px){
     .sidebar{
         margin-top: 40px;
         margin-right: 15px;

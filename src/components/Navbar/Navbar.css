@@ -78,9 +78,12 @@
     }
 }
 
-@media screen and (max-width:1160px){
+@media screen and (max-width:1367px){
     .navbar {
-        padding: 18px 40px 12px;
+        padding: 16px 40px 12px;
+    }
+    .searchContainer>form>input {
+        height: 35px;
     }
 }
 
