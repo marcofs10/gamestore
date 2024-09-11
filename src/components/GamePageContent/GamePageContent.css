@@ -1,6 +1,5 @@
 .gamePageContent{
     padding: 0px 50px;
-    margin-bottom: 20px;
 }
 
 .upperContainer{
@@ -161,8 +160,63 @@
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(14deg) brightness(106%) contrast(102%);
 }
 
-@media screen and (max-width:858px){
-    .gamePageContent{
+@media screen and (max-width:1367px) {
+    .upperContainer>h1 {
+        font-size: 3em;
+    }
+    .gameInfoContainer {
+        padding: 22px 22px 50px 22px;
+    }
+    .contentContainer {
+        gap: 24px;
+    }
+    .innerScrollable>h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    .innerScrollable>p {
+        font-size: 13px;
+    }
+    .innerScrollable>a {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .gameInfoContainer>.platforms {
+        margin-bottom: 0px;
+    }
+    .gameDetails {
+        margin-top: 12px;
+    }
+    .gameDetailsElement {
+        margin-bottom: 12px;
+    }
+    .gameDetailsElement>span {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    .gameDetailsElement>p {
+        font-size: 12px;
+    }
+    .footerPrice {
+        gap: 10px;
+        right: 20px;
+        bottom: 8px;
+    }
+    .footerPrice>span {
+        font-size: 15px;
+    }
+    .footerPrice>button {
+        gap: 6px;
+        padding: 6px 5px;
+        width: 140px;
+    }
+    .footerPrice>button>img {
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:858px) {
+    .gamePageContent {
         padding: 0 10px;
     }
 }
