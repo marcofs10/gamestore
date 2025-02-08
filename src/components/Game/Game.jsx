@@ -67,7 +67,7 @@ export const Game = ({ game, row, updateCartSection, wanted }) => {
                     {(hovered) && (
                         <div>
                             <img className={`wishIcon ${wanted ? 'wishIconWanted' : ''}`}
-                                src='/images/Gift.png' 
+                                src='/gamestore/images/Gift.png' 
                                 onClick={toggleCartElement} />
                             <ul>
                                 <li>

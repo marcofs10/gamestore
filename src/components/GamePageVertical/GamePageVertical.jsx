@@ -24,7 +24,7 @@ export const GamePageVertical = ({ game, wanted, updateCartSection }) => {
                         <p>{JSON.parse(JSON.stringify(game)).about}</p>
                     </div>
                     <div className='gameInfoContainerVertical'>
-                        <a target="_blank" href={game.link}>{`${game.name} website`}<img className='arrowLinkGameVertical' src='/images/right.png'/></a>
+                        <a target="_blank" href={game.link}>{`${game.name} website`}<img className='arrowLinkGameVertical' src='/gamestore/images/right.png'/></a>
                         <div className='gameDetailsVertical'>
                             <div className='gameDetailsElementVertical'>
                                 <span>Score</span>
@@ -54,7 +54,7 @@ export const GamePageVertical = ({ game, wanted, updateCartSection }) => {
                         <div className='footerPriceVertical'>
                             <span>{`$${game.price}`}</span>
                             <button className={wanted ? 'buttonWantedVertical' : ''} onClick={toggleCartElement}>
-                                <img src='/images/Gift.png' />
+                                <img src='/gamestore/images/Gift.png' />
                                 <p>{wanted ? 'Added to cart' : 'Add to cart'}</p>
                             </button>
                         </div>

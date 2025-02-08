@@ -14,7 +14,7 @@ export const GamePageContent = ({ game, wanted, updateCartSection }) => {
     return (
         <div className='gamePageContent'>
             <div className='upperContainer'>
-                <Link to={-1} className='linkReturn'><img className='arrowReturn' src='/images/left.png'/>Go back</Link>
+                <Link to={-1} className='linkReturn'><img className='arrowReturn' src='/gamestore/images/left.png'/>Go back</Link>
                 <h1>{game.name}</h1>
             </div>
             <section className='contentContainer'>
@@ -59,7 +59,7 @@ export const GamePageContent = ({ game, wanted, updateCartSection }) => {
                     <div className='footerPrice'>
                         <span>{`$${game.price}`}</span>
                         <button className={wanted ? 'buttonWanted' : ''} onClick={toggleCartElement}>
-                            <img src='/images/Gift.png' />
+                            <img src='/gamestore/images/Gift.png' />
                             <p>{wanted ? 'Added to cart' : 'Add to cart'}</p>
                         </button>
                     </div>

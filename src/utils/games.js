@@ -15,11 +15,11 @@ export const games = [
         ageRestriction:'T (Teen)',
         id: 1,
         thumbnail: [
-            "/images/DRG0mini.webp",
-            "/images/DRG1mini.webp",
-            "/images/DRG2mini.webp",
-            "/images/DRG3mini.webp",
-            "/images/DRG4mini.webp"
+            "/gamestore/images/DRG0mini.webp",
+            "/gamestore/images/DRG1mini.webp",
+            "/gamestore/images/DRG2mini.webp",
+            "/gamestore/images/DRG3mini.webp",
+            "/gamestore/images/DRG4mini.webp"
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737053/DRG1_lvdcfu.webp",
@@ -44,11 +44,11 @@ export const games = [
         ageRestriction:'E (Everyone)',
         id: 2,
         thumbnail: [
-            "/images/PT0mini.webp",
-            "/images/PT1mini.webp",
-            "/images/PT2mini.webp",
-            "/images/PT3mini.webp",
-            "/images/PT4mini.webp"
+            "/gamestore/images/PT0mini.webp",
+            "/gamestore/images/PT1mini.webp",
+            "/gamestore/images/PT2mini.webp",
+            "/gamestore/images/PT3mini.webp",
+            "/gamestore/images/PT4mini.webp"
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737585/PT1_mf6gdw.webp",
@@ -72,11 +72,11 @@ export const games = [
         ageRestriction:'E (Everyone)',
         id: 3,
         thumbnail: [
-            "/images/SS0mini.webp",
-            "/images/SS1mini.webp",
-            "/images/SS2mini.webp",
-            "/images/SS3mini.webp",
-            "/images/SS4mini.webp",
+            "/gamestore/images/SS0mini.webp",
+            "/gamestore/images/SS1mini.webp",
+            "/gamestore/images/SS2mini.webp",
+            "/gamestore/images/SS3mini.webp",
+            "/gamestore/images/SS4mini.webp",
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737679/SS1_ycqod7.webp",
@@ -101,11 +101,11 @@ export const games = [
         rating: 88,
         id: 4,
         thumbnail: [
-            "/images/MD0mini.webp",
-            "/images/MD1mini.webp",
-            "/images/MD2mini.webp",
-            "/images/MD3mini.webp",
-            "/images/MD4mini.webp",
+            "/gamestore/images/MD0mini.webp",
+            "/gamestore/images/MD1mini.webp",
+            "/gamestore/images/MD2mini.webp",
+            "/gamestore/images/MD3mini.webp",
+            "/gamestore/images/MD4mini.webp",
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737553/MD1_kqq5sr.webp",
@@ -130,11 +130,11 @@ export const games = [
         ageRestriction:'M (Mature)',
         id: 5,
         thumbnail: [
-            "/images/BM0mini.webp",
-            "/images/BM1mini.webp",
-            "/images/BM2mini.webp",
-            "/images/BM3mini.webp",
-            "/images/BM4mini.webp"
+            "/gamestore/images/BM0mini.webp",
+            "/gamestore/images/BM1mini.webp",
+            "/gamestore/images/BM2mini.webp",
+            "/gamestore/images/BM3mini.webp",
+            "/gamestore/images/BM4mini.webp"
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725731801/BM1_kvjiaz.webp",
@@ -159,11 +159,11 @@ export const games = [
         ageRestriction:'M (Mature)',
         id: 7,
         thumbnail: [
-            "/images/TW0mini.webp",
-            "/images/TW1mini.webp",
-            "/images/TW2mini.webp",
-            "/images/TW3mini.webp",
-            "/images/TW4mini.webp"
+            "/gamestore/images/TW0mini.webp",
+            "/gamestore/images/TW1mini.webp",
+            "/gamestore/images/TW2mini.webp",
+            "/gamestore/images/TW3mini.webp",
+            "/gamestore/images/TW4mini.webp"
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737834/TW1_riyz80.webp",
@@ -188,11 +188,11 @@ export const games = [
         ageRestriction:'T (Teen)',
         id: 8,
         thumbnail: [
-            "/images/SM0mini.webp",
-            "/images/SM1mini.webp",
-            "/images/SM2mini.webp",
-            "/images/SM3mini.webp",
-            "/images/SM4mini.webp"
+            "/gamestore/images/SM0mini.webp",
+            "/gamestore/images/SM1mini.webp",
+            "/gamestore/images/SM2mini.webp",
+            "/gamestore/images/SM3mini.webp",
+            "/gamestore/images/SM4mini.webp"
         ],
         footage: [
             "https://res.cloudinary.com/marcofs10/image/upload/v1725737620/SM1_l6bovo.webp",

@@ -20,8 +20,8 @@ export const Carousel = ({ game, vertical }) => {
             <div className='imgSlider'>
                 {game.footage.map(image => (<img key={image} src={image} className='footageImg' style={{ translate: `${-100 * visible}%` }} />))}
             </div>
-            <img className='arrow left' src='/images/left.png' onClick={previous} />
-            <img className='arrow right' src='/images/right.png' onClick={next} />
+            <img className='arrow left' src='/gamestore/images/left.png' onClick={previous} />
+            <img className='arrow right' src='/gamestore/images/right.png' onClick={next} />
             {!vertical && <div className='buttonContainer'>
                 {game.footage.map((el, index) => (
                     <button key={el} className={`sliderButton ${index === visible ? 'sliderButtonActive' : ''}`} onClick={() => setVisible(index)}>
