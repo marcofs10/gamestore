@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://marcofs10.github.io/gamestore",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
