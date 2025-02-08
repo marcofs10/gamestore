@@ -35,7 +35,7 @@ function App() {
 
     return (
         <>
-            <Routes>
+            <Routes basename='/gamestore/'>
                 <Route path="/gamestore/" element={<HomePage
                     isMobile={isMobile}
                     updateCartSection={updateCartSection}
