@@ -3,6 +3,6 @@ import './IconPlatform.css'
 
 export const IconPlatform = ({icon}) => {
   return (
-    <img className='iconPlatform' src={`/images/${icon}.png`}/>
+    <img className='iconPlatform' src={`/gamestore/images/${icon}.png`}/>
   )
 }
