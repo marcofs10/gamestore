@@ -27,7 +27,7 @@ export const GamePageContent = ({ game, wanted, updateCartSection }) => {
                         <div className='innerScrollable'>
                             <h2>About</h2>
                             <p>{JSON.parse(JSON.stringify(game)).about}</p>
-                            <a target="_blank" href={game.link}>{`${game.name} website`}<img className='arrowLinkGame' src='/images/right.png' /></a>
+                            <a target="_blank" href={game.link}>{`${game.name} website`}<img className='arrowLinkGame' src='/gamestore/images/right.png' /></a>
                             <div className='gameDetails'>
                                 <div className='gameDetailsElement'>
                                     <span>Score</span>
